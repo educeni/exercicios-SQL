@@ -1,0 +1,2 @@
+SELECT c.Placa, c.Cor, c.Modelo FROM Carro c
+	WHERE c.CodCar > 0; 
