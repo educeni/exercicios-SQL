@@ -1,0 +1,6 @@
+SELECT cl.nome, cl.cpf, cl.sexo FROM clientes cl	
+INNER JOIN contas_x_clientes cx
+ON cl.cod_cli = cx.cod_cli
+INNER JOIN contas co
+ON co.num_conta = cx.num_conta
+WHERE co.saldo > 1000;
