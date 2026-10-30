@@ -1,0 +1,6 @@
+SELECT cl.nome, cl.cpf, co.saldo, co.num_conta FROM clientes cl
+INNER JOIN contas_x_clientes cx
+ON cx.cod_cli = cl.cod_cli
+INNER JOIN contas co
+ON co.num_conta = cx.num_conta
+WHERE co.saldo > 500 AND co.saldo < 5000;
